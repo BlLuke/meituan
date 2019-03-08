@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./jquery-1.11.3.js"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div>
+        <div id="mtImg"></div>
+        <div id="logs">
+            <a href="">首页</a>
+            <a href="">入驻加盟</a>
+            <a href="">开放平台</a>
+            <a href="">社会责任 </a>
+            <a href="">点外卖</a>
+            <a href="">下载手机版</a>
+        </div>
+        </div>
+    </div>
+    <div id="selection">
+        <a href=""><div style="background:#658ff7;" class="selectedBox">
+            <div style="background:url('./imgs/enter-icon.png');background-size: 30px 30px;background-repeat: no-repeat;background-position:0 7px;margin-left:calc(50% - 84px);">我要入驻</div>
+            <p>商家、配送、城市代理、服务市场</p>
+        </div></a>
+        <a href=""><div style="background:#F54C45;" class="selectedBox">
+            <div style="background:url('./imgs/dev-icon.png');background-size: 30px 30px;background-repeat: no-repeat;background-position:0 7px;">开发者接入</div>
+            <p>外卖、餐饮开放平台</p>
+        </div></a>
+        <a href=""><div style="background:#FFBD27;" class="selectedBox">
+            <div style="background:url('./imgs/waimai-icon.png');background-size: 30px 30px;background-repeat: no-repeat;background-position:0 7px;">我要点外卖</div>
+            <p>快捷下单，一键点餐</p>
+        </div></a>
+    </div>
+    <div class="animationSpace" style="position: relative;top:175px;">
+        <div class="SpaceMicroImg" style="height:127px;width:390px;background: url('./imgs/serviceintro.png');"></div>
+        <div id="aniBox01">
+            <div id="PhoneLeftSelections">
+                <p style="text-align: center;">品类全覆盖，应有尽有</p>
+                <br>
+                <ul id="posSelectorsUl">
+                    <li class="animateIcoLi">
+                        <div class="microIco" style="background-image: url('./imgs/animate01.Ico.png');"></div>
+                        <div class="animate01LiListers">
+                            <div class="WillNotComeOut">美食 Delicacy</div>
+                            <div>大牌优惠</div>
+                        </div>
+                    </li>
+                    <br>
+                    <br>
+                    <li class="animateIcoLi">
+                        <div class="microIco" style="background-image: url('./imgs/animate02.Ico.png');"></div>
+                        <div class="animate01LiListers">
+                            <div class="WillNotComeOut" id="abc">甜点饮品 Desserts&Drinks</div>
+                            <div>幸福甜蜜</div>
+                        </div>
+                    </li>
+                    <br>
+                    <br>
+                    <li class="animateIcoLi">
+                        <div class="microIco" style="background-image: url('./imgs/animate03.Ico.png');"></div>
+                        <div class="animate01LiListers">
+                            <div class="WillNotComeOut">水果生鲜 Fresh foods</div>
+                            <div>新鲜速达</div>
+                        </div>
+                    </li>
+                    <br>
+                    <br>
+                    <li class="animateIcoLi">
+                        <div class="microIco" style="background-image: url('./imgs/animate04.Ico.png');"></div>
+                        <div class="animate01LiListers">
+                            <div class="WillNotComeOut">超市便利 Supermarket</div>
+                            <div>优惠促销</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="PhoneImg">
+                <div class="PhoneContents">
+				<div style="width:2430px;height:9px;background:rgba(50,50,50,0.8);border-radius:7px; position:relative;top:516px;left:calc(50% - 13px);"></div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="animationSpace" style="background:#FFD161;">
+            <div class="SpaceMicroImg" style="height:135px;width:309px;background: url('./imgs/story.png');"></div>
+            <div id="imageRoler">
+                <div id="imgRollLftBlock"></div>
+                <div id="imgRollerImg">
+                    <div id="imgLftBtn"></div>
+                    <div id="rollinImg">
+                        <img class="imgslide" src="imgs/img01slide.PNG">
+                        <img class="imgslide" src="imgs/img02slide.PNG">
+                        <img class="imgslide" src="imgs/img03slide.PNG">
+                    </div>
+                    <div id="imgRghtBtn"></div>
+                </div>
+            </div>
+    </div>
+    <div class="animationSpace">
+        <div class="SpaceMicroImg" style="height:127px;width:269px;background: url('./imgs/news.png');"></div>
+    </div>
+    <div id="footer" style="position: absolute;">
+        <div id="boxb">
+            <div id="btLeft">
+                <ul style="float:left;">
+                    <li><a href="https://">开放平台</a></li>
+                    <li><a href="https://">媒体报道</li></a>
+                    <li><a href="https://">平台制度</li></a>
+                    <li><a href="https://">入驻加盟</li></a>
+                </ul>
+                <ul style="float:right;">
+                    <li><a href="https://">常见问题</li></a>
+                    <li><a href="https://">用户反馈</li></a>
+                    <li><a href="https://">诚信举报</li></a>
+                    <li><a href="https://">加入我们</li></a >
+                </ul>
+            </div>
+            <div id="btRight">
+                <div id="btRight-left">
+                    <p class="LargerText">品牌合作</p>
+                    <p>wpbg.marketing@meituan.com</p>
+                    <p class="LargerText">客服 1010-9777</p>
+                    <p>周一至周日 9:00~23:00</p>
+                    <p>客服不受理商务合作</p>
+                </div>
+                <div id="btRight-right">
+                    更多商家, 更多优惠
+                    <br>
+                    <img src="./imgs/qrcode-app.png" style="width:90px;height:90px;">
+                    <img src="./imgs/qrcode-wxapp.png" style="width:90px;height:90px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
