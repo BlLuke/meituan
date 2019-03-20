@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    
+    </script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+            padding:0;
+            background-image: url('./imgs/shop.jpg');
+            background-position: center;
+            background-position-y: 0;
+            background-repeat: no-repeat;
+        }#header{
+            position:relative;
+            top:0px;
+            left:0px;
+            height:190px;
+        }#header-options{
+            height:50px;
+            background:rgba(0,0,0,.4);
+        }#header-main-options{
+            position:absolute;
+            width:1180px;
+            height:26%;
+            /* border:1px solid black; */
+            /* margin:auto; */
+            left:calc(50% - 590px);
+        }#main-page-top-info{
+            width:1180px;
+            height:caLc(100% - 50px);
+            margin:auto;
+            /* border:1px solid black; */
+        }.top-options-lefters{
+            width:134px;
+            float:left;
+            
+            color:white;
+            text-decoration: none;
+            /* font-size: 18px; */
+            line-height:50px;
+            text-align: center;
+        }#righters{
+            width:430px;
+            height:50px;
+            position:absolute;
+            right:0px;
+        }.top-options-righters{
+            color:white;
+            width:114px!important;
+            text-decoration: none;
+            line-height:50px;
+            text-align: center;
+            display: block;
+            float:left;
+            color:rgba(220,220,220,1);
+            font-size: 14px;
+        }#ul-listers{
+            background:rgba(255,255,255,1);
+            height:160px;
+            width:120px;
+            text-align: center;
+            position: absolute;
+            right:0;
+            top:45px;
+            box-shadow: 0px 0px 10px black;
+            z-index: 10;
+            display: none;
+        }#ul-listers p{
+            width:100%;
+            text-align: center;
+            line-height:14px;
+            font-size: 14px;
+            color:grey;
+        }#account{
+            position: absolute;
+            right:0px;
+            top:0px;
+            color:white;
+        }#account:hover #ul-listers{
+            display: block;
+        }#follow-btn{
+            height:60px;
+            width:80px;
+            background:rgba(255,255,255,0.1);
+            float:right;
+            position:relative;
+            top:50px;
+            border-radius: 4px;
+            text-align: center;
+            color:white;
+            font-size: 14px;
+            /* padding-top:30px; */
+            cursor: pointer;
+        }#shop-icon-space{
+            background:rgba(0,0,0,0);
+            width:480px;
+            height:142px;
+            z-index: 10; 
+            transition:0.3s;
+        }#shop-icon-space:hover{
+            box-shadow: 0 0 10px black;
+            background:rgba(255,255,255,.2);
+        }#shop-icon-space:hover #hidden-details{
+            display: block;
+            height:233px;
+            transform: translateY(68px);
+        }
+        #shop-icon{
+            box-sizing: content-box;
+            background: url("./imgs/icon.jpg") ;
+            height:95px;
+            width: 95px;
+            border-radius:50%;
+            border:5px solid rgba(0,0,0,0.4);
+            position:relative;
+            top:20px;
+            float:left;
+        }#store-name{
+            color:white;
+            font-size: 20px;
+            display: inline-block;
+            margin:10px;
+            margin-top:36px;
+        }#stars{
+            background:url("./imgs/stars.png");
+            display: inline-block;
+            background-size: 20px;
+            background-repeat: repeat-x;
+            height:20px;
+            width:60px;
+            position:relative;
+            top:38px;
+            left:-190px;
+            overflow:visible;
+            padding-left:64px;
+            color:white;
+            font-size: 14px;
+        }
+        
+
+        #time-cost-info{
+            /* background:rgba(0,0,0,0.6); */
+            width:540px;
+            height:70px;
+            /* position:initial;
+            top: 86px;
+            left: 818px; */
+            margin-top:-110px;
+            margin-left: 630px;
+            overflow: visible;
+            float: right;
+        }.time-cost-info{
+            color:white;
+            display: inline-block;
+            text-align: center;
+            width:150px;
+            font-size: 14px;
+        }.time-cost-info h3{
+            font-weight: 400!important;
+            font-size: 18px;
+        }
+
+
+
+        
+
+        #top-selections{
+            height:65px;
+            background:white;
+        }
+        #bottom-items{
+            background:rgba(0,50,50,0.05);
+            height:900px;
+        }#top-real-selections{
+            width:1180px;
+            margin:auto;
+        }.top-real-selections{
+            width:112px;
+            line-height: 60px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            color:black;
+
+        }.top-real-selections:first-child{
+            color:#0089dc;
+            border-bottom: 3px solid #0089dc;
+        }#middle-selectors-right{
+            float:right;
+            height:65px;
+            width:800px;
+        }#query-contrl{
+            display: inline-block;
+            width:400px;
+            height:65px;
+            margin-left:100px;
+            font-size: 14px;
+        }#query-contrl .odd{
+            line-height: 65px;
+            width:80px;
+            display: inline-block;
+            text-align: center;
+            
+        } #search{
+            height:36px;
+            float:right;
+            display: block;
+            position: relative;
+            top:13px;
+            width:270px;
+            outline: none;
+            padding:10px;
+            font-size: 14px;
+            position:relative;
+            left:20px;
+        }
+
+
+
+        #phone-ico{
+            height:24px;
+            width:20px;
+            background-image: url("./imgs/cap.PNG");
+            position: relative;
+            top:12px;
+            left:16px;
+            float:left;
+        }
+        #hidden-details{
+            background:url("./imgs/asdasdzx.png") white;
+            background-size: 90%;
+            background-position: 5% 5%;
+            background-repeat:no-repeat;
+            transition:0.3s;
+            /* background:white; */
+            height:0px;
+            position:relative;
+            display: none;
+            width:100%;
+            transform: translateY(0);
+            box-shadow: 0 0 10px grey;
+        }#btn1{
+            height:30px;width:30px;
+            background:url("./imgs/123.png") 32px;
+            float:right;
+            position: relative;
+            top:17px;
+            cursor: pointer;
+        }#btn2{
+            height:30px;width:30px;
+            background: url("./imgs/234.png") 32px 32px;
+            float:right;
+            position: relative;
+            display: inline-block;
+            top:17px;
+            cursor: pointer;
+        }#search-btn{
+            width:30px;height:30px;
+            float:right;
+            position:relative;
+            top:16px;
+            right:15px;
+            z-index: 10;
+            background:url("./imgs/search.png");
+            background-size: 100%;
+            cursor:pointer;
+        }#TMD{
+            width:900px;
+            height:100px;
+            border:1px solid rgba(0,0,0,0.1);
+            position:relative;
+            left:calc(50% - 600px);
+            top:20px;
+            border-radius: 5px;
+            background:white;
+            
+        }.TMD-selections{
+            width:210px;height:40px;
+            display: inline-block;
+            margin-top:5px;
+            margin-left:9px;
+            line-height: 40px;
+            padding-left:10px;
+            color:grey;
+            border-radius: 5px;
+            cursor: pointer;
+        }.TMD-selections:nth-child(1){
+            color:white;
+            background:#0089dc;
+        }.TMD-selections:hover{
+            opacity: 0.8;
+        }#最后一个{
+            cursor:default;
+            width:260px;
+            height:400px;
+            background:white;
+            border:1px solid rgba(0,0,0,0.1);
+            position:relative;
+            left:calc(50% + 320px);
+            top:-78px;
+        }#商家公告{
+            height:40px;
+            color:white;
+            background:#0089dc;
+            width:100%;
+            padding-left: 15px;
+            line-height: 40px;
+        }#NMD{
+            width:100%;
+            height:80px;
+            /* padding-top:10px; */
+            line-height: 30px;
+            font-size: 14px;
+            padding:10px;
+        }#a12321{
+            height:60px;
+            background:rgba(220,220,220,0.3);
+            padding:10px;
+            font-size: 14px;
+        }.CNMD{
+            width:210px;
+            display: inline-block;
+            font-size: 14px;
+            margin-left:10px;
+            margin-top:10px;
+            /* color:grey; */
+        }.asdasd{
+            left:10px;
+            position:relative;
+            top:-10px;
+            border-radius:50%;height:20px;width:20px;background:grey;color:white;text-align:center;line-height:20px;font-size:12px;display: inline-block;
+        }#举报{
+            width:100%;
+            height:50px;
+            font-size: 18px;
+            color:grey;
+            line-height: 50px;
+            text-align: center;
+            margin-top:15px;
+            border-top:1px solid rgba(0,0,0,0.1);
+            cursor: pointer;
+        }#user-img{
+            height:25px;
+            width:25px;
+            border-radius: 50%;
+            background:url("./###") white;
+            float:left;
+            position: relative;
+            top:12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="header-options">
+            <div id="header-main-options">
+                <div id="logo" class="top-options-lefters">饿了么LOGO</div>  
+                <a href="#" class="top-options-lefters" style="width:112px;">首页</a>
+                <a href="#" class="top-options-lefters">我的订单</a>
+                <a href="#" class="top-options-lefters">加盟合作</a>
+                <a href="#" class="top-options-lefters">我的客服</a>
+                    
+                <div id="righters">
+                    <a href="#" class="top-options-righters">规则中心</a>
+                    <a href="#" class="top-options-righters"style=""><div id="phone-ico"></div>手机应用</a>
+                    <a href="#" class="top-options-righters" id="account" style="overflow: visible;"><div id="user-img"></div>{{ 用户名 }}<div id="ul-listers">
+                        <p><img>个人中心</p>
+                        <p><img>我的收藏</p>
+                        <p><img>我的地址</p>
+                        <p><img>安全设置</p>    
+                        <p><img>退出登陆</p>
+                    </div></a>
+                </div>  
+                <div id="follow-btn">
+                    <div style="font-size: 30px;line-height: 10px;margin-top:14px;margin-bottom:10px;">♡</div>
+                    收藏
+                </div>
+            </div>
+        </div>
+        <div id="main-page-top-info">
+            <div id="shop-icon-space">
+                <div id="shop-icon"></div>
+                <p id="store-name">王家沙(北京西路店)</p>
+                <span id="stars">(2031)</span>
+                <div id="hidden-details" style="z-index: 10;">
+                    
+                </div>
+            </div>
+            <div id="time-cost-info">
+                <span class="time-cost-info">起送价
+                    <h3>20元</h3>
+                </span>
+                <span class="time-cost-info">配送费
+                    <h3>配送费¥3.8</h3>
+                </span>
+                <span class="time-cost-info">平均送达速度
+                    <h3>23分钟</h3>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="top-selections">
+        <div id="top-real-selections">
+            <div style="width:350px;margin:0;float:left;">
+                <a href="#" class="top-real-selections">所有商品</a>
+                <span style="border:0.5px solid rgb(182, 182, 182);"> </span>
+                <a href="#" class="top-real-selections">评价</a>
+                <span style="border:0.5px solid rgb(182, 182, 182);"> </span>
+                <a href="#" class="top-real-selections">商家资质</a>
+            </div>
+            <div id="middle-selectors-right">
+                <div id="query-contrl">
+                    <span class="odd" style="            cursor: pointer;">默认排序</span>
+                    <span style="border:0.5px solid rgb(182, 182, 182);            cursor: pointer;"> </span>
+                    <span class="odd">平分⇩</span>
+                    <span style="border:0.5px solid rgb(182, 182, 182);            cursor: pointer;"> </span>
+                    <span class="odd">销量⇩</span>
+                    <span style="border:0.5px solid rgb(182, 182, 182);            cursor: pointer;"> </span>
+                    <span class="odd">价格⇩</span>
+                    <div id='btn1'></div>
+                    <div id="btn2"></div>
+                </div>
+                <div id="search-btn"></div>
+                <input id="search" type="text" placeholder="搜索商家,美食...(〜￣△￣)〜">
+            </div>
+        </div>
+    </div>
+    <div id="bottom-items">
+        <div id="TMD">
+            <div class="TMD-selections">热销</div>
+            <div class="TMD-selections">小店说话</div>
+            <div class="TMD-selections">鲜奶系列</div>
+            <div class="TMD-selections">素匠泰式特饮</div>
+            <div class="TMD-selections">素匠泰式奶茶</div>
+            <div class="TMD-selections">素匠泰茶宝宝</div>
+        </div>
+        <div id="最后一个">
+            <div id="商家公告">商家公告</div>
+            <div id="NMD">遇到任何问题，请联系小店，会给您满意解决！</div>
+            <div id="a12321">
+                <b style="display: block;">配送说明：</b>
+                <span style="display: block;">配送费¥0.3</span>
+            </div>
+            <div>
+                <div class="asdasd">赔</div>
+                <div class="CNMD">
+                    商家原因导致订单取消，赔付代金券
+                </div>
+                <div class="asdasd">保</div>
+                <div class="CNMD">
+                    该商户食品安全已由国泰产险承担，食品安全有保障
+                </div>
+                <div class="asdasd">票</div>
+                <div class="CNMD">
+                    该商家支持开发票，请在下单时填写好发票抬头
+                </div>
+                <div id="举报">举报商家</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
